@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="container col-sm-8 text-left">
+            <h1 class="text-center">CATERING MENU</h1>
+            <div class="container" style="background-color: #2b542c">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Salads</h2>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>MED</th>
+                                <th>LARGE</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="success" ng-repeat="salad in salads">
+                                <td><a href="#salad/{{salad.name}}"> {{ salad.name }}</a></td>
+                                <td>{{ salad.med }}</td>
+                                <td>{{ salad.large }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Appetizers</h2>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="success" ng-repeat="appetizer in appetizers">
+                                <td>{{ appetizer.name }}</td>
+                                <td>{{ appetizer.price }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>STIR-FRY</h2>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>MED</th>
+                                <th>MED</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <td></td>
+                            <td>VEGGIES</td>
+                            <td>CK/PORK BEEF</td>
+                            <td>VEGGIES</td>
+                            <td>CK/PORK</td>
+                            <td>BEEF</td>
+                            <td>PRAWN</td>
+                            <tr class="success" ng-repeat="item in StirFry">
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.med_veggies }}</td>
+                                <td>{{ item.med_pork }}</td>
+                                <td>{{ item.large_veggies}}</td>
+                                <td>{{item.large_pork}}</td>
+                                <td>{{item.large_beef}}</td>
+                                <td>{{item.large_prawn}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>FRIED RICE & NOODLES</h2>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>MED</th>
+                                <th>MED</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <td></td>
+                            <td>VEGGIES</td>
+                            <td>CK/PORK BEEF</td>
+                            <td>VEGGIES</td>
+                            <td>CK/PORK</td>
+                            <td>BEEF</td>
+                            <td>PRAWN</td>
+                            <tr class="success" ng-repeat="item in friedRice_Noodles">
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.med_veggies }}</td>
+                                <td>{{ item.med_pork }}</td>
+                                <td>{{ item.large_veggies}}</td>
+                                <td>{{item.large_pork}}</td>
+                                <td>{{item.large_beef}}</td>
+                                <td>{{item.large_prawn}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>SIGNATURE CURRIES</h2>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>MED</th>
+                                <th>MED</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                                <th>LARGE</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <td></td>
+                            <td>VEGGIES</td>
+                            <td>CK/PORK BEEF</td>
+                            <td>VEGGIES</td>
+                            <td>CK/PORK</td>
+                            <td>BEEF</td>
+                            <td>PRAWN</td>
+                            <tr class="success" ng-repeat="item in signatureCurries">
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.med_veggies }}</td>
+                                <td>{{ item.med_pork }}</td>
+                                <td>{{ item.large_veggies}}</td>
+                                <td>{{item.large_pork}}</td>
+                                <td>{{item.large_beef}}</td>
+                                <td>{{item.large_prawn}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <table class="table">
+                            <thead>
+                            </thead>
+                            <tbody>
+                            <tr class="success" ng-repeat="item in smallTable">
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.med }}</td>
+                                <td>{{ item.large }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
